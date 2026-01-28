@@ -1,0 +1,180 @@
+/* Contact Page Styles */
+.contact-page {
+  min-height: 100vh;
+  background-color: var(--color-gray-50);
+  padding: 3rem 0;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-header .highlight {
+  color: var(--color-cyan);
+}
+
+.contact-header p {
+  font-size: 1.25rem;
+  color: var(--color-gray-600);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-info-box {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.contact-info-box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+}
+
+.contact-info-box h2 .highlight {
+  color: var(--color-cyan);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-item-icon {
+  font-size: 2rem;
+  color: var(--color-cyan);
+}
+
+.contact-item-content h3 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-item-content p {
+  color: var(--color-gray-600);
+}
+
+.contact-item-content a {
+  color: var(--color-cyan);
+  transition: text-decoration 0.3s ease;
+}
+
+.contact-item-content a:hover {
+  text-decoration: underline;
+}
+
+.services-box {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+}
+
+.services-box h2 .highlight {
+  color: var(--color-cyan);
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.services-list li .check {
+  color: var(--color-cyan);
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.services-list li span {
+  color: var(--color-gray-700);
+}
+
+.cta-box {
+  background: linear-gradient(to right, var(--color-cyan), var(--color-turquoise));
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.cta-box p {
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+}
+
+.whatsapp-cta-btn {
+  display: inline-block;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-cta-btn:hover {
+  background-color: #16a34a;
+}
+
+.whatsapp-cta-btn .btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.whatsapp-cta-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

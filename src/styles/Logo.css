@@ -1,0 +1,67 @@
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-badge-wrapper {
+  position: relative;
+}
+
+.logo-badge {
+  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-turquoise) 100%);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--color-black);
+}
+
+.logo-icon {
+  position: absolute;
+  bottom: -0.25rem;
+  right: -0.25rem;
+  background-color: var(--color-black);
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.logo-icon svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  color: var(--color-cyan);
+}
+
+.logo-company {
+  margin-left: 0.75rem;
+  display: block;
+}
+
+.logo-company-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.logo-company-name .primary {
+  color: var(--color-cyan);
+}
+
+.logo-company-name .secondary {
+  color: var(--color-white);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 639px) {
+  .logo-company-name {
+    font-size: 0.95rem;
+  }
+  
+  .logo-company-name .secondary {
+    font-size: 0.65rem;
+  }
+}
