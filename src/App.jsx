@@ -8,6 +8,8 @@ import Alarmas from './pages/Alarmas';
 import DVRs from './pages/DVRs';
 import Redes from './pages/Redes';
 import Monitores from './pages/Monitores';
+import Computadores from './pages/Computadores';
+import Sensores from './pages/sensores';
 import Contacto from './pages/Contacto';
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Route path="/dvrs" element={<DVRs />} />
             <Route path="/redes" element={<Redes />} />
             <Route path="/monitores" element={<Monitores />} />
+            <Route path="/computadores" element={<Computadores />} />
+            <Route path="/sensores" element={<Sensores />} />
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
         </main>
@@ -34,3 +38,4 @@ function App() {
 }
 
 export default App;
+

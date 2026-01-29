@@ -8,6 +8,7 @@
 .contact-header {
   text-align: center;
   margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 
 .contact-header h1 {
@@ -52,7 +53,7 @@
   color: var(--color-cyan);
 }
 
-.contact-details {
+.contact-items {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -64,28 +65,37 @@
   gap: 1rem;
 }
 
-.contact-item-icon {
+.contact-icon {
   font-size: 2rem;
   color: var(--color-cyan);
 }
 
-.contact-item-content h3 {
+.contact-item h3 {
   font-weight: bold;
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
 }
 
-.contact-item-content p {
+.contact-item p {
   color: var(--color-gray-600);
 }
 
-.contact-item-content a {
+.contact-link {
   color: var(--color-cyan);
   transition: text-decoration 0.3s ease;
 }
 
-.contact-item-content a:hover {
+.contact-link:hover {
   text-decoration: underline;
+}
+
+.contact-email {
+  color: var(--color-gray-600);
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+  color: var(--color-cyan);
 }
 
 .services-box {
@@ -98,6 +108,88 @@
 
 .services-box h2 {
   font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+}
+
+.services-box h2 .highlight {
+  color: var(--color-cyan);
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.services-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.services-list .check {
+  color: var(--color-cyan);
+  font-size: 1.25rem;
+}
+
+.services-list span:last-child {
+  color: var(--color-gray-700);
+}
+
+.cta-box {
+  background: linear-gradient(to right, var(--color-cyan), var(--color-turquoise));
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.cta-box p {
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20BA5A;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.whatsapp-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: var(--color-black);

@@ -4,53 +4,94 @@ export default function Alarmas() {
   const products = [
     {
       name: "Alarma Inalámbrica",
+      image: "/images/alarmas/alarmainhalambrica.jpg",
       description: "Sistema de alarma sin cables para fácil instalación",
       features: ["Sensores inalámbricos", "Panel táctil", "Notificaciones móviles"]
     },
     {
       name: "Alarma con Sirena",
+      image: "/images/alarmas/alarmaconsirena.jpg",
       description: "Sistema de alarma con sirena de alta potencia",
       features: ["Sirena 120dB", "Batería de respaldo", "Zona configurable"]
     },
     {
       name: "Alarma Anti-intrusión",
+      image: "/images/alarmas/alarmaantiintrusion.jpg",
       description: "Detectores de apertura y movimiento",
       features: ["Sensores magnéticos", "PIR infrarrojo", "Compatible con app"]
     },
     {
       name: "Alarma GSM",
+      image: "/images/alarmas/alarmagsm.jpg",
       description: "Sistema con comunicación celular",
       features: ["Alerta por SMS", "Llamada automática", "Sin línea telefónica"]
+    },
+    {
+      name: "Alarma Anti-intrusión",
+      image: "/images/alarmas/alarmaemopa.jpg",
+      description: "Detectores de apertura y movimiento",
+      features: ["Sensores magnéticos", "PIR infrarrojo", "Compatible con app"]
+    },
+    {
+      name: "Alarma Anti-intrusión",
+      image: "/images/alarmas/alarmamapfre.webp",
+      description: "Detectores de apertura y movimiento",
+      features: ["Sensores magnéticos", "PIR infrarrojo", "Compatible con app"]
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
+    <div className="product-page">
+      <div className="container">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">
-            Sistemas de <span className="text-tech-cyan">Alarmas</span>
+        <div className="product-header">
+          <h1>
+            Sistemas de <span className="highlight">Alarmas</span>
           </h1>
-          <p className="text-xl text-gray-600">
+          <p>
             Protección inteligente contra intrusos y emergencias
           </p>
         </div>
 
+        <div className="product-info">
+          <h2>
+            Beneficios de las <span className="highlight">alarmas</span>
+          </h2>
+          <div className="info-grid">
+            <div className="info-item">
+              <div className="icon">⚡</div>
+              <h3>Respuesta Inmediata</h3>
+              <p>Alerta instantánea ante cualquier intrusión</p>
+            </div>
+            <div className="info-item">
+              <div className="icon">🔔</div>
+              <h3>Disuasión</h3>
+              <p>Evita robos antes de que ocurran</p>
+            </div>
+            <div className="info-item">
+              <div className="icon">📞</div>
+              <h3>Notificaciones</h3>
+              <p>Recibe alertas en tu celular al instante</p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br /> 
+
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="products-grid">
           {products.map((product, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="bg-gradient-to-r from-red-500 to-orange-500 h-48 flex items-center justify-center">
-                <span className="text-6xl">🚨</span>
+            <div key={index} className="product-card">
+              <div className="product-image alarms">
+                <img src={product.image} alt={product.name} />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3">{product.name}</h3>
-                <p className="text-gray-600 mb-4">{product.description}</p>
-                <ul className="space-y-2 mb-6">
+              <div className="product-content">
+                <h3>{product.name}</h3>
+                <p>{product.description}</p>
+                <ul className="product-features">
                   {product.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-700">
-                      <span className="text-tech-cyan mr-2">✓</span>
+                    <li key={idx}>
+                      <span className="check">✓</span>
                       {feature}
                     </li>
                   ))}
@@ -59,37 +100,13 @@ export default function Alarmas() {
                   href="https://wa.me/573152284097?text=Me%20interesa%20información%20sobre%20alarmas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-tech-cyan hover:bg-tech-turquoise text-black font-bold py-2 px-4 rounded transition-colors"
+                  className="product-btn"
                 >
                   Solicitar Info
                 </a>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Additional Info */}
-        <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Beneficios de las <span className="text-tech-cyan">alarmas</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="text-4xl mb-3">⚡</div>
-              <h3 className="font-bold text-xl mb-2">Respuesta Inmediata</h3>
-              <p className="text-gray-600">Alerta instantánea ante cualquier intrusión</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-3">🔔</div>
-              <h3 className="font-bold text-xl mb-2">Disuasión</h3>
-              <p className="text-gray-600">Evita robos antes de que ocurran</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-3">📞</div>
-              <h3 className="font-bold text-xl mb-2">Notificaciones</h3>
-              <p className="text-gray-600">Recibe alertas en tu celular al instante</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

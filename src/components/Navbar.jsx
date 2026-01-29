@@ -43,6 +43,8 @@ export default function Navbar() {
               <Link to="/dvrs" className="dropdown-item" onClick={closeMenus}>DVRs</Link>
               <Link to="/redes" className="dropdown-item" onClick={closeMenus}>Redes</Link>
               <Link to="/monitores" className="dropdown-item" onClick={closeMenus}>Monitores</Link>
+              <Link to="/computadores" className="dropdown-item" onClick={closeMenus}>Computadores</Link>
+              <Link to="/sensores" className="dropdown-item" onClick={closeMenus}>Sensores</Link>
             </div>
           </div>
           
