@@ -2,7 +2,7 @@ import '../styles/WhatsAppButton.css';
 
 export default function WhatsAppButton() {
   const phoneNumber = "573152284097"; // +57 315 228 4097
-  const message = "Hola, estoy interesado en sus servicios de seguridad";
+  const message = "Hola, estoy interesado!";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
