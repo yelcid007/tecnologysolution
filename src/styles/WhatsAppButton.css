@@ -24,3 +24,9 @@
   width: 2rem;
   height: 2rem;
 }
+
+.whatsapp-btn--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+}

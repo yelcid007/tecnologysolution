@@ -1,16 +1,33 @@
+import { useEffect, useState } from 'react';
 import '../styles/WhatsAppButton.css';
 
 export default function WhatsAppButton() {
+  const [isVisible, setIsVisible] = useState(true);
   const phoneNumber = "573152284097"; // +57 315 228 4097
   const message = "Hola, estoy interesado!";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  useEffect(() => {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(!entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="whatsapp-btn"
+      className={`whatsapp-btn ${!isVisible ? 'whatsapp-btn--hidden' : ''}`}
       aria-label="Contactar por WhatsApp"
     >
       <svg

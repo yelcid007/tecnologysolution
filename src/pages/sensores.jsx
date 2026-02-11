@@ -1,9 +1,7 @@
 import '../styles/Products.css';
 
 export default function Sensores() {
-
-    {/* Additional Info */}
-          
+        
 
   const products = [
     {

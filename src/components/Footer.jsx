@@ -17,7 +17,6 @@ export default function Footer() {
           <div className="footer-section">
             <h3>Contacto</h3>
             <ul>
-              <li>📞 Tel: 031 2438912</li>
               <li>📱 Cel: 315 228 4097</li>
               <li>✉️ technologysolution7@gmail.com</li>
               <li>📍 Bogotá, D.C., Colombia</li>

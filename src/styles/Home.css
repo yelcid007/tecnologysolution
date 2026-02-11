@@ -1,6 +1,9 @@
 /* Home Page Styles */
 .hero {
-  background: linear-gradient(to right, var(--color-black), var(--color-dark));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/logos/planetatierra.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--color-white);
   padding: 5rem 0;
 }
@@ -13,24 +16,45 @@
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
+  font-family: 'ChunkFive', 'Bevan', serif;
+  color: white;
+  -webkit-text-stroke: 3px #00bfff;
+  text-shadow:
+    0 0 5px #00bfff,
+    0 0 10px #00bfff,
+    0 0 20px #00bfff,
+    0 0 35px #00bfff,
+    0 0 50px #00bfff;
 }
 
+
 .hero-title .highlight {
-  color: var(--color-cyan);
+  font-size: 4rem;
+  color: white;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
   margin-bottom: 2rem;
-  color: var(--color-gray-300);
+  color: white;
+  -webkit-text-stroke: 2px #2e3192;
+  text-shadow: 0 0 10px #2e3192, 2px 2px 8px rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 0.2px #00a2e0;
+  text-shadow: 0 0 0.2px #00a2e0;
 }
 
 .hero-description {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: white;
+  -webkit-text-stroke: 2px #2e3192;
+  text-shadow: 0 0 10px #2e3192, 2px 2px 8px rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 0.2px #00a2e0;
+  text-shadow: 0 0 0.2px #00a2e0;
 }
 
 .hero-cta {
@@ -40,8 +64,8 @@
 }
 
 .btn-primary {
-  background-color: var(--color-cyan);
-  color: var(--color-black);
+  background-color: #00a2e0;
+  color: black;
   font-weight: bold;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -110,7 +134,7 @@
 /* Why Choose Us */
 .why-us {
   padding: 4rem 0;
-  background: var(--color-cyan);
+  background: #00a2e0;
   color: var(--color-white);
 }
 

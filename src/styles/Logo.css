@@ -9,7 +9,7 @@
 }
 
 .logo-badge {
-  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-turquoise) 100%);
+  background: #00a2e0;
   border-radius: 0.5rem;
   padding: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@
 .logo-icon svg {
   width: 0.75rem;
   height: 0.75rem;
-  color: var(--color-cyan);
+  color: #00a2e0;
 }
 
 .logo-company {
@@ -48,7 +48,7 @@
 }
 
 .logo-company-name .primary {
-  color: var(--color-cyan);
+  color: #00a2e0;
 }
 
 .logo-company-name .secondary {
