@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Company Info */}
           <div className="footer-section">
-            <h3>Technology Solution's</h3>
+            <h3>Tecnology Solution's</h3>
             <p>
               Suministros, Instalación y Mantenimiento de sistemas de seguridad
             </p>
@@ -18,7 +18,7 @@ export default function Footer() {
             <h3>Contacto</h3>
             <ul>
               <li>📱 Cel: 315 228 4097</li>
-              <li>✉️ technologysolution7@gmail.com</li>
+              <li>✉️ tecnologysolution7@gmail.com</li>
               <li>📍 Bogotá, D.C., Colombia</li>
             </ul>
           </div>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Technology Solution's. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Tecnology Solution's. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

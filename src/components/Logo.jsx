@@ -17,7 +17,7 @@ export default function Logo({ className = "" }) {
       </div>
       <div className="logo-company">
         <div className="logo-company-name">
-          <span className="primary">TecSol</span>
+          <span className="primary">Tecsol</span>
           <br />
           <span className="secondary">Tecnology Solution's</span>
         </div>

@@ -8,7 +8,6 @@ export default function Camaras() {
   const products = [
     {
       name: "Cámara IP Domo",
-      precio: "$150.000",
       description: "Cámara IP de alta resolución con visión nocturna",
       image: "/images/camaras/camaradomo.webp",
       features: ["1080p Full HD", "Visión nocturna 30m", "Resistente al agua IP66"]

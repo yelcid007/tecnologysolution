@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -12,11 +12,13 @@ import Computadores from './pages/Computadores';
 import Sensores from './pages/sensores';
 import Contacto from './pages/Contacto';
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
+    <div className="flex flex-col min-h-screen">
+      {!isHome && <Navbar />}
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -33,6 +35,13 @@ function App() {
         <Footer />
         <WhatsAppButton />
       </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
