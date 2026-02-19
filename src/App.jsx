@@ -12,7 +12,7 @@ import Computadores from './pages/Computadores';
 import Sensores from './pages/sensores';
 import Almacenamiento from './pages/almacenamiento';
 import Contacto from './pages/Contacto';
-import ControlAcceso from './pages/control_acceso';
+import ControlAcceso from './pages/Control_acceso';
 
 
 function AppContent() {
