@@ -36,13 +36,14 @@ export default function Navbar() {
         <div className="navbar-links navbar-desktop">
           <Link to="/" className="navbar-link" onClick={closeMenus}>Inicio</Link>
           <Link to="/camaras" className="navbar-link" onClick={closeMenus}>Cámaras</Link>
-          <Link to="/alarmas" className="navbar-link" onClick={closeMenus}>Control de acceso</Link>
+          <Link to="/control_acceso" className="navbar-link" onClick={closeMenus}>Control de acceso</Link>
           <Link to="/redes" className="navbar-link" onClick={closeMenus}>Redes</Link>
           <Link to="/monitores" className="navbar-link" onClick={closeMenus}>Monitores</Link>
           <Link to="/alarmas" className="navbar-link" onClick={closeMenus}>Alarmas</Link>
           <Link to="/dvrs" className="navbar-link" onClick={closeMenus}>DVRs</Link>
-          <Link to="/sensores" className="navbar-link" onClick={closeMenus}>Almacenamiento</Link>
-          <Link to="/computadores" className="navbar-link" onClick={closeMenus}>Cerradura inteligente</Link>
+          <Link to="/almacenamiento" className="navbar-link" onClick={closeMenus}>Almacenamiento</Link>
+          <Link to="/sensores" className="navbar-link" onClick={closeMenus}>Sensores</Link>
+          <Link to="/computadores" className="navbar-link" onClick={closeMenus}>Computadores</Link>
           <Link to="/contacto" className="navbar-link" onClick={closeMenus}>Contacto</Link>
         </div>
 
@@ -57,13 +58,14 @@ export default function Navbar() {
             </span>
             <div className="dropdown-menu">
               <Link to="/camaras" className="dropdown-item" onClick={closeMenus}>Cámaras</Link>
-              <Link to="/alarmas" className="dropdown-item" onClick={closeMenus}>Control de acceso</Link>
+              <Link to="/control_acceso" className="dropdown-item" onClick={closeMenus}>Control de acceso</Link>
               <Link to="/redes" className="dropdown-item" onClick={closeMenus}>Redes</Link>
               <Link to="/monitores" className="dropdown-item" onClick={closeMenus}>Monitores</Link>
               <Link to="/alarmas" className="dropdown-item" onClick={closeMenus}>Alarmas</Link>
               <Link to="/dvrs" className="dropdown-item" onClick={closeMenus}>DVRs</Link>
-              <Link to="/sensores" className="dropdown-item" onClick={closeMenus}>Almacenamiento</Link>
-              <Link to="/computadores" className="dropdown-item" onClick={closeMenus}>Cerradura inteligente</Link>
+              <Link to="/almacenamiento" className="dropdown-item" onClick={closeMenus}>Almacenamiento</Link>
+              <Link to="/sensores" className="dropdown-item" onClick={closeMenus}>Sensores</Link>
+              <Link to="/computadores" className="dropdown-item" onClick={closeMenus}>Computadores</Link>
             </div>
           </div>
           

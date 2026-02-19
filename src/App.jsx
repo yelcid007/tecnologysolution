@@ -10,7 +10,10 @@ import Redes from './pages/Redes';
 import Monitores from './pages/Monitores';
 import Computadores from './pages/Computadores';
 import Sensores from './pages/sensores';
+import Almacenamiento from './pages/almacenamiento';
 import Contacto from './pages/Contacto';
+import ControlAcceso from './pages/control_acceso';
+
 
 function AppContent() {
   const location = useLocation();
@@ -29,7 +32,9 @@ function AppContent() {
             <Route path="/monitores" element={<Monitores />} />
             <Route path="/computadores" element={<Computadores />} />
             <Route path="/sensores" element={<Sensores />} />
+            <Route path="/almacenamiento" element={<Almacenamiento />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/control_acceso" element={<ControlAcceso />} />
           </Routes>
         </main>
         <Footer />

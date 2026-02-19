@@ -3,110 +3,102 @@ import '../styles/Products.css';
 export default function Alarmas() {
   const products = [
     {
-      name: "Alarma Inalámbrica",
-      image: "/images/alarmas/alarmainhalambrica.jpg",
-      description: "Sistema de alarma sin cables para fácil instalación",
-      features: ["Sensores inalámbricos", "Panel táctil", "Notificaciones móviles"]
+      name: "Bocina Sirena Intemperie para Robos",
+      description: "Sirena de alta potencia para exterior con protección contra intemperie",
+      image: "/images/alarmas/Bocina Sirena Intemperie Robos Seguridad Casas Fincas 110v Negro.webp",
+      features: ["110V", "Uso exterior", "Alta potencia"]
     },
     {
-      name: "Alarma con Sirena",
-      image: "/images/alarmas/alarmaconsirena.jpg",
-      description: "Sistema de alarma con sirena de alta potencia",
-      features: ["Sirena 120dB", "Batería de respaldo", "Zona configurable"]
+      name: "Kit Alarma Inalámbrica GSM y WiFi",
+      description: "Sistema completo de alarma GSM con conexión WiFi integrada",
+      image: "/images/alarmas/Kit Alarma Para Casa Inalambrica Gsm Y Wifi.webp",
+      features: ["GSM y WiFi", "Control remoto", "Fácil instalación"]
     },
     {
-      name: "Alarma Anti-intrusión",
-      image: "/images/alarmas/alarmaantiintrusion.jpg",
-      description: "Detectores de apertura y movimiento",
-      features: ["Sensores magnéticos", "PIR infrarrojo", "Compatible con app"]
+      name: "Kit Alarma WiFi 4G Última Versión",
+      description: "Sistema moderno with WiFi y conectividad 4G",
+      image: "/images/alarmas/Kit Alarma Para Casa Inalámbrica Wifi 4g - Ultima Version Blanco.webp",
+      features: ["WiFi 4G", "Versión mejorada", "Color blanco"]
     },
     {
-      name: "Alarma GSM",
-      image: "/images/alarmas/alarmagsm.jpg",
-      description: "Sistema con comunicación celular",
-      features: ["Alerta por SMS", "Llamada automática", "Sin línea telefónica"]
+      name: "Kit Alarma Inalámbrica con Sensor Presencia",
+      description: "Sistema completo con sensores de movimiento integrados",
+      image: "/images/alarmas/Kit De Alarma Inalámbrica For Casa Con Sensor De Presencia.webp",
+      features: ["Sensor presencia", "Inalámbrica", "Sistema completo"]
     },
     {
-      name: "Alarma Anti-intrusión",
-      image: "/images/alarmas/alarmaemopa.jpg",
-      description: "Detectores de apertura y movimiento",
-      features: ["Sensores magnéticos", "PIR infrarrojo", "Compatible con app"]
+      name: "Sensor Movimiento Techo Infrarrojo 360°",
+      description: "Detector PIR de movimiento para montaje en techo",
+      image: "/images/alarmas/Sensor De Movimiento Techo Infrarrojo 360º Sobreponer.webp",
+      features: ["360° cobertura", "Infrarrojo", "Sobreponer"]
     },
     {
-      name: "Alarma Anti-intrusión",
-      image: "/images/alarmas/alarmamapfre.webp",
-      description: "Detectores de apertura y movimiento",
-      features: ["Sensores magnéticos", "PIR infrarrojo", "Compatible con app"]
+      name: "Sensor Detector Humo con Batería 9V",
+      description: "Detector de humo con batería 9V incluida y conexión 110V",
+      image: "/images/alarmas/Sensor Detector De Humo Batería 9v Incluida Conexión 110v Blanco.webp",
+      features: ["Batería 9V", "Conexión 110V", "Color blanco"]
+    },
+    {
+      name: "Sirena 110V para Alarmas Comunitarias",
+      description: "Sirena robusta para sistemas de alarma comunitaria y pánico",
+      image: "/images/alarmas/Sirena 110v Para Alarmas Comunitarias Panico Emergencia.webp",
+      features: ["110V", "Emergencias", "Pánico"]
+    },
+    {
+      name: "Sirena Inalámbrica de Seguridad",
+      description: "Sirena inalámbrica compatible con sistemas de alarma modernos",
+      image: "/images/alarmas/Sirena Alarma Inalámbrica De Seguridad Blanco.webp",
+      features: ["Inalámbrica", "Color blanco", "Fácil instalación"]
     }
   ];
 
   return (
     <div className="product-page">
-      <div className="container">
-        {/* Header */}
-        <div className="product-header">
-          <h1>
-            Sistemas de <span className="highlight">Alarmas</span>
-          </h1>
-          <p>
-            Protección inteligente contra intrusos y emergencias
-          </p>
-        </div>
-
-        <div className="product-info">
-          <h2>
-            Beneficios de las <span className="highlight">alarmas</span>
-          </h2>
-          <div className="info-grid">
-            <div className="info-item">
-              <div className="icon">⚡</div>
-              <h3>Respuesta Inmediata</h3>
-              <p>Alerta instantánea ante cualquier intrusión</p>
-            </div>
-            <div className="info-item">
-              <div className="icon">🔔</div>
-              <h3>Disuasión</h3>
-              <p>Evita robos antes de que ocurran</p>
-            </div>
-            <div className="info-item">
-              <div className="icon">📞</div>
-              <h3>Notificaciones</h3>
-              <p>Recibe alertas en tu celular al instante</p>
+      <header className="product-header">
+        <h1>Sistemas de Alarmas</h1>
+        <p>Protección inteligente contra intrusos y <strong>emergencias</strong></p>
+      </header>
+      
+      <div className="products-grid">
+        {products.map((product, index) => (
+          <div key={index} className="product-card">
+            <img src={product.image} alt={product.name} className="product-image" />
+            <div className="product-content">
+              <h3>{product.name}</h3>
+              <p>{product.description}</p>
+              <ul className="product-features">
+                {product.features.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
+              <a 
+                href={`https://wa.me/573138043590?text=Hola%2C%20estoy%20interesado%20en%20${encodeURIComponent(product.name)}`}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="product-btn"
+              >
+                Solicitar Información
+              </a>
             </div>
           </div>
-        </div>
-        <br />
-        <br /> 
+        ))}
+      </div>
 
-        {/* Products Grid */}
-        <div className="products-grid">
-          {products.map((product, index) => (
-            <div key={index} className="product-card">
-              <div className="product-image alarms">
-                <img src={product.image} alt={product.name} />
-              </div>
-              <div className="product-content">
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
-                <ul className="product-features">
-                  {product.features.map((feature, idx) => (
-                    <li key={idx}>
-                      <span className="check">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="https://wa.me/573152284097?text=Me%20interesa%20información%20sobre%20alarmas"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="product-btn"
-                >
-                  Solicitar Info
-                </a>
-              </div>
-            </div>
-          ))}
+      <div className="product-info">
+        <h2>Beneficios de Nuestros Sistemas de Alarmas</h2>
+        <div className="info-grid">
+          <div className="info-item">
+            <h3>⚡ Respuesta Inmediata</h3>
+            <p>Alerta instantánea ante cualquier intrusión</p>
+          </div>
+          <div className="info-item">
+            <h3>🔔 Disuasión</h3>
+            <p>Evita robos antes de que ocurran</p>
+          </div>
+          <div className="info-item">
+            <h3>📞 Notificaciones</h3>
+            <p>Recibe alertas móviles al instante</p>
+          </div>
         </div>
       </div>
     </div>

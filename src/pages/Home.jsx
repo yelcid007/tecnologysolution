@@ -104,7 +104,7 @@ export default function Home() {
             </Link>
 
             {/* Service Card 7 */}
-            <Link to="/control_acceso" className="service-card">
+            <Link to="/Control_acceso" className="service-card">
               <img src="/images/control_acceso/control_acceso.png" alt="Control de acceso" />
               <h3>Control de acceso</h3>
               <p>
